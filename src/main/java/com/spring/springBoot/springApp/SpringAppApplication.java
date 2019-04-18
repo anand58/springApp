@@ -8,6 +8,7 @@ public class SpringAppApplication {
 
 
 	public static void main(String[] args) {
+		System.out.println("Test check in");
 		SpringApplication.run(SpringAppApplication.class, args);
 	}
 
