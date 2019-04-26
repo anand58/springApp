@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <p class="text-success">{{ str }}</p>
+
+    <div id="user-data">
+      <div class="form-group">
+        First name:<br />
+        <input
+          id="username"
+          type="text"
+          name="firstname"
+          class="form-control"
+          [(ngModel)]="fname"
+        /><br />
+
+        Last name:<br />
+        <input
+          id="lastname"
+          type="text"
+          name="lastname"
+          class="form-control"
+          [(ngModel)]="lname"
+        />
+        <button
+          [disabled]="flag"
+          class="btn btn-primary"
+          type="submit"
+          (click)="onClick()"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
